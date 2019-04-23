@@ -1,0 +1,261 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BC2DCE3F-D8B6-4692-837A-0561988BBA82}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TCIReleaseJucec</RootNamespace>
+    <AssemblyName>TCIReleaseJucec</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <OutputPath>bin\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <OutputPath>bin\Release\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accusoft.ImagXpress10.Net, Version=10.0.42.0, Culture=neutral, PublicKeyToken=80d669b8b606a2da, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\EasyCaptureContent\Accusoft.ImagXpress10.Net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DeskSignerSDKPDF, Version=2.1.3.0, Culture=neutral, PublicKeyToken=44d8672fdd730f84, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Desktop\maquinaJOnas\dll\DeskSignerSDKPDF.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SecureBlackbox, Version=8.0.175.24738, Culture=neutral, PublicKeyToken=5a62fa96d0ac431a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\SecureBlackbox.dll</HintPath>
+    </Reference>
+    <Reference Include="SecureBlackbox.HTTP, Version=8.0.175.24772, Culture=neutral, PublicKeyToken=5a62fa96d0ac431a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\SecureBlackbox.HTTP.dll</HintPath>
+    </Reference>
+    <Reference Include="SecureBlackbox.PDF, Version=8.0.175.24778, Culture=neutral, PublicKeyToken=5a62fa96d0ac431a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\SecureBlackbox.PDF.dll</HintPath>
+    </Reference>
+    <Reference Include="SecureBlackbox.SSLClient, Version=8.0.175.24765, Culture=neutral, PublicKeyToken=5a62fa96d0ac431a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\SecureBlackbox.SSLClient.dll</HintPath>
+    </Reference>
+    <Reference Include="SecureBlackbox.SSLCommon, Version=8.0.175.24762, Culture=neutral, PublicKeyToken=5a62fa96d0ac431a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\SecureBlackbox.SSLCommon.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Data.SqlServerCe, Version=4.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Source\Repos\tci-ocr\tcieasyocr\libs\System.Data.SqlServerCe.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TCI.Utils.NET2005">
+      <HintPath>C:\MounterCaptura\TCI.Utils.NET2005.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="configuracao\ThreadTci.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ConnectionFactory\ConnectionFactory.cs" />
+    <Compile Include="DaoImpl\CSVDaoImpl.cs" />
+    <Compile Include="DaoImpl\ImagemDaoImpl.cs" />
+    <Compile Include="DaoImpl\IndexerDaoImpl.cs" />
+    <Compile Include="DaoImpl\ParametroProdutoProjetoDaoImpl.cs" />
+    <Compile Include="Dao\CSVDao.cs" />
+    <Compile Include="Dao\ImagemDao.cs" />
+    <Compile Include="Dao\IndexerDao.cs" />
+    <Compile Include="Dao\ParametroProdutoProjetoDao.cs" />
+    <Compile Include="MainPrincipal.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Model\CaixaProperties.cs" />
+    <Compile Include="Model\ConfiguracaoProperties.cs" />
+    <Compile Include="Model\CSVProperties.cs" />
+    <Compile Include="Model\DocumentosProperties.cs" />
+    <Compile Include="Model\ImagemProperties.cs" />
+    <Compile Include="Model\IndiceProperties.cs" />
+    <Compile Include="Model\ParametroProdutoProjetoProperties%3b.cs" />
+    <Compile Include="Model\ProjetoProperties.cs" />
+    <Compile Include="Model\ProtocoloProperties.cs" />
+    <Compile Include="Model\ReleaseJucecProperties.cs" />
+    <Compile Include="Model\ValorIndiceProcessoProperties.cs" />
+    <Compile Include="Model\ValorIndiceProperties.cs" />
+    <Compile Include="Regras\ReagrasCSV.cs" />
+    <Compile Include="Regras\RegrasCaixa.cs" />
+    <Compile Include="Regras\RegrasDocumentos.cs" />
+    <Compile Include="Regras\RegrasImagem.cs" />
+    <Compile Include="Regras\RegrasIndexer.cs" />
+    <Compile Include="Regras\RegrasParametroProdutoProjeto.cs" />
+    <Compile Include="Regras\RegrasProjeto.cs" />
+    <Compile Include="Regras\RegrasProtocolo.cs" />
+    <Compile Include="servico\Servicos.cs" />
+    <Compile Include="Util\ClassUtil.cs" />
+    <Compile Include="configuracao\Configuracao.cs" />
+    <Compile Include="DaoImpl\CaixaDaoImpl.cs" />
+    <Compile Include="DaoImpl\DocumentoDaoImpl.cs" />
+    <Compile Include="DaoImpl\ProjetoDaoImpl.cs" />
+    <Compile Include="DaoImpl\ProtocoloDaoImpl.cs" />
+    <Compile Include="Dao\CaixaDao.cs" />
+    <Compile Include="Dao\DocumentoDao.cs" />
+    <Compile Include="Dao\ProjetoDao.cs" />
+    <Compile Include="Dao\ProtocoloDao.cs" />
+    <Compile Include="ReleaseJucec.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReleaseJucec.Designer.cs">
+      <DependentUpon>ReleaseJucec.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InstallerClass.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="InstallerClass.Designer.cs">
+      <DependentUpon>InstallerClass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Persistencia.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Util\Constantes.cs" />
+    <Compile Include="Util\LogUtil.cs" />
+    <Compile Include="Util\Util.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ReleaseJucec.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ReleaseJucec.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InstallerClass.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>InstallerClass.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="configUnica.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="PegasusImaging.WinForms.ImagXpress7.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SecureBlackbox.dll" />
+    <Content Include="SecureBlackbox.HTTP.dll" />
+    <Content Include="SecureBlackbox.PDF.dll" />
+    <Content Include="SecureBlackbox.SSLClient.dll" />
+    <Content Include="SecureBlackbox.SSLCommon.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

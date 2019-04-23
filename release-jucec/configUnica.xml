@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+
+<configuration>
+
+  <!-- Local maquina Eduardo Nofre-->
+  <!--<string_conexao_banco value = "RGF0YSBTb3VyY2U9QlBPU1BEQjAxOyBJbml0aWFsIENhdGFsb2c9QkRfRWFzeUNhcHR1cmVfSlVDRUM7IFVzZXIgSWQ9dXNlcl9qdWNlY19yZWxlYXNlOyBQYXNzd29yZD1wYXNzX2p1Y2VjX3JlbGVhc2U7IENvbm5lY3QgVGltZW91dD0zMDA="/>-->
+
+  <!-- Connection CAPDIST_FILEPE (LOCAL)-->
+  <!-- Produção-->
+  <string_conexao_banco value = "RGF0YSBTb3VyY2U9MTAuMjU0LjEwMC4xMjsgSW5pdGlhbCBDYXRhbG9nPUVhc3lDYXB0dXJlX0pVQ0VDOyBVc2VyIElkPXVzZXJfZGVzdjsgUGFzc3dvcmQ9IUAxcWF6MndzeEAhOyBDb25uZWN0IFRpbWVvdXQ9MTIw"/>
+
+  <database_type value = "0"/>
+
+  <!-- Tabela de Login e Senha Inicial-->
+  <tabela value = "select * from login_db"/>
+
+  <!-- Caminho do Capture -->
+  <capture_path value = "C:\Mounter\TCICapture.exe"/>
+
+  <!-- Tipo de separacao normal = 0  Separar razao social = 1  Juntar razao social e descricao = 2 -->
+  <separar_razao_social value="0"/>
+
+</configuration>
